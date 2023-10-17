@@ -1,29 +1,5 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
-
-
-/**
- * copyright 2022 @codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
-
 :root {
-
-  /**
-   * colors
-   */
-
-  /* gradient */
-
-  --bg-gradient-onyx: linear-gradient(
+ --bg-gradient-onyx: linear-gradient(
     to bottom right, 
     hsl(240, 1%, 25%) 3%, 
     hsl(0, 0%, 19%) 97%
@@ -54,7 +30,7 @@
     hsl(35, 100%, 68%)
   );
 
-  /* solid */
+
 
   --jet: hsl(0, 0%, 22%);
   --onyx: hsl(240, 1%, 17%);
@@ -69,14 +45,8 @@
   --light-gray-70: hsla(0, 0%, 84%, 0.7);
   --bittersweet-shimmer: hsl(0, 43%, 51%);
 
-  /**
-   * typography
-   */
-
-  /* font-family */
   --ff-poppins: 'Poppins', sans-serif;
 
-  /* font-size */
   --fs-1: 24px;
   --fs-2: 18px;
   --fs-3: 17px;
@@ -86,38 +56,21 @@
   --fs-7: 13px;
   --fs-8: 11px;
 
-  /* font-weight */
   --fw-300: 300;
   --fw-400: 400;
   --fw-500: 500;
   --fw-600: 600;
 
-  /**
-   * shadow
-   */
-  
   --shadow-1: -4px 8px 24px hsla(0, 0%, 0%, 0.25);
   --shadow-2: 0 16px 30px hsla(0, 0%, 0%, 0.25);
   --shadow-3: 0 16px 40px hsla(0, 0%, 0%, 0.25);
   --shadow-4: 0 25px 50px hsla(0, 0%, 0%, 0.15);
   --shadow-5: 0 24px 80px hsla(0, 0%, 0%, 0.25);
 
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease-in-out;
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
 
 *, *::before, *::after {
   margin: 0;
@@ -156,14 +109,6 @@ input, textarea {
 html { font-family: var(--ff-poppins); }
 
 body { background: var(--smoky-black); }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
 
 .sidebar,
 article {
@@ -292,27 +237,11 @@ article.active {
   z-index: -1;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #MAIN
-\*-----------------------------------*/
-
 main {
   margin: 15px 12px;
   margin-bottom: 75px;
   min-width: 259px;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #SIDEBAR
-\*-----------------------------------*/
 
 .sidebar {
   margin-bottom: 15px;
@@ -447,13 +376,6 @@ main {
 .social-item .social-link:hover { color: var(--light-gray); }
 
 
-
-
-
-/*-----------------------------------*\
-  #NAVBAR
-\*-----------------------------------*/
-
 .navbar {
   position: fixed;
   bottom: 0;
@@ -488,13 +410,6 @@ main {
 .navbar-link.active { color: var(--orange-yellow-crayola); }
 
 
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
 .about .article-title { margin-bottom: 15px; }
 
 .about-text {
@@ -506,11 +421,6 @@ main {
 
 .about-text p { margin-bottom: 15px; }
 
-
-
-/**
- * #service 
- */
 
 .service { margin-bottom: 35px; }
 
@@ -555,10 +465,6 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * #testimonials 
- */
 
 .testimonials { margin-bottom: 30px; }
 
@@ -606,11 +512,6 @@ main {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-
-
-/**
- * #testimonials-modal
- */
 
 .modal-container {
   position: fixed;
@@ -722,10 +623,6 @@ main {
 }
 
 
-/**
- * #clients 
- */
-
 .clients { margin-bottom: 15px; }
 
 .clients-list {
@@ -757,19 +654,8 @@ main {
 .clients-item img:hover { filter: grayscale(0); }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESUME
-\*-----------------------------------*/
-
 .article-title { margin-bottom: 30px; }
 
-
-/**
- * education and experience 
- */
 
 .timeline { margin-bottom: 30px; }
 
@@ -829,11 +715,6 @@ main {
   line-height: 1.6;
 }
 
-
-/**
- * skills 
- */
-
 .skills-title { margin-bottom: 20px; }
 
 .skills-list { padding: 20px; }
@@ -867,13 +748,6 @@ main {
   border-radius: inherit;
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #PORTFOLIO
-\*-----------------------------------*/
 
 .filter-list { display: none; }
 
@@ -1026,14 +900,6 @@ main {
   font-weight: var(--fw-300);
 }
 
-
-
-
-
-/*-----------------------------------*\
-  #BLOG
-\*-----------------------------------*/
-
 .blog-posts { margin-bottom: 10px; }
 
 .blog-posts-list {
@@ -1113,14 +979,6 @@ main {
   font-weight: var(--fw-300);
   line-height: 1.6;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
 
 .mapbox {
   position: relative;
@@ -1222,30 +1080,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 .form-btn:disabled:hover::before { background: var(--bg-gradient-jet); }
 
 
-
-
-
-/*-----------------------------------*\
-  #RESPONSIVE
-\*-----------------------------------*/
-
-/**
- * responsive larger than 450px screen
- */
-
 @media (min-width: 450px) {
 
-  /**
-   * client
-   */
-
   .clients-item { min-width: calc(33.33% - 10px); }
-
-
-
-  /**
-   * #PORTFOLIO, BLOG 
-   */
 
   .project-img,
   .blog-banner-box { height: auto; }
@@ -1253,24 +1090,9 @@ textarea.form-input::-webkit-resizer { display: none; }
 }
 
 
-
-
-
-/**
- * responsive larger than 580px screen
- */
-
 @media (min-width: 580px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-1: 32px;
     --fs-2: 24px;
@@ -1281,12 +1103,6 @@ textarea.form-input::-webkit-resizer { display: none; }
     --fs-8: 12px;
 
   }
-
-
-
-  /**
-   * #REUSED STYLE
-   */
 
   .sidebar, article {
     width: 520px;
